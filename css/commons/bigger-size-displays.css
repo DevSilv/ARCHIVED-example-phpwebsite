@@ -1,0 +1,42 @@
+/* 440px, that is 1,5 time larger than the
+minimal resolution tested (280px x 280px) */
+
+@media (min-width: 440px) {
+    .main-logo-draft-text {
+        font-size: calc(5*(3vw + 1vh));
+        line-height: calc(5*(3vw + 1vh));
+    }
+
+    .main-menu__list {
+        grid-template-rows: auto auto;
+        /* The "grid-template-columns" property cannot have the
+        "50%" value in the repeat function, because it causes
+        some problems with the grid container's padding. */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 700px, that is 2,5 times larger than the
+minimal resolution tested (280px x 280px) */
+
+@media (min-width: 700px) {
+    .main-logo-draft-text {
+        font-size: calc(4*(3vw + 1vh));
+        line-height: calc(4*(3vw + 1vh));
+    }
+
+    .main-menu__list {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 980px, that is 3,5 times larger then the
+minimal resolution tested (280px x 280px) */
+
+@media (min-width: 980px) {
+    .main-logo-draft-text {
+        font-size: calc(3*(3vw + 1vh));
+        line-height: calc(3*(3vw + 1vh));
+    }
+}

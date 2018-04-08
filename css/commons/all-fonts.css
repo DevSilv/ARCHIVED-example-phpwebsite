@@ -1,0 +1,10 @@
+@import url("../fonts/alfa-slab-one.css");
+@import url("../fonts/lato.css");
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.main-logo-draft-text {
+    font-family: "Alfa Slab One", sans-serif;
+}

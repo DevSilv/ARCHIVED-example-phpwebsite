@@ -1,0 +1,27 @@
+.footer {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 12px;
+
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.footer__notices {
+    text-align: center;
+
+    margin: 0;
+}
+
+.footer__notice {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer__notice:first-child {
+    padding-left: 0;
+}
+
+.footer__notice:last-child {
+    padding-right: 0;
+}

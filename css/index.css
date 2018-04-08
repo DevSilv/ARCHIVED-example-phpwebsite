@@ -1,0 +1,10 @@
+.content {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.content__body {
+    line-height: 1.5em;
+
+    text-align: justify;
+}

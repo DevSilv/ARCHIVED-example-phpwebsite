@@ -1,0 +1,65 @@
+.main-header {
+    display: flex;
+    /* This selector has to have set "justify-content"
+    property, because setting more preferably "align-self"
+    on the "language-links-wrapper" element (its child)
+    does not work for some reason. */
+    justify-content: space-between;
+
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.main-logo-link {
+    text-decoration: none;
+}
+
+.main-logo-draft-text {
+    /* it is "6", because it fits best when the screen
+    the smallest screen resolution is set, that is
+    280px x 280px in Firefox 58 Responsive mode. */
+    font-size: calc(6*(3vw + 1vh));
+    line-height: calc(6*(3vw + 1vh));
+
+    margin: 0;
+}
+
+.language-links-wrapper {
+    /* The display of this element has to be set as
+    flexbox, because it is the clearest way of getting
+    rid of white space text nodes (have a look here:
+    https://css-tricks.com/fighting-the-space-between-inline-block-elements/) */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.one-language-link-wrapper {
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+}
+
+.one-language-link-wrapper:first-child {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+    padding-bottom: 0.5em;
+    margin-bottom: 0.1em;
+}
+
+.language-link {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.one-language-link-wrapper:last-child .language-link {
+    /* The selectors have to look like
+    that, because ".language-link"s are
+    not siblings thus the ":first-child"
+    selector cannot be applied to them. */
+    /* The declaration's value has to be
+    set directly "underline", because
+    "initial" value doesn't work. */
+    text-decoration: line-through underline;
+}

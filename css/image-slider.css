@@ -1,0 +1,27 @@
+.image-slider {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.image-slider__buttons-wrapper {
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-slider__button {
+    border-width: 3px;
+    border-style: solid;
+
+    height: 3em;
+}
+
+.image-slider__image {
+    max-width: 100%;
+}

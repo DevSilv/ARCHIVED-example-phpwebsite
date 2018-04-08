@@ -1,0 +1,81 @@
+.link,
+.main-logo-draft-text::first-letter {
+    color: blue;
+}
+
+.link:hover {
+    color: darkblue;
+}
+
+.main-logo-link:hover {
+    /* It has to be set it explicitly black,
+    i.e. as the default HTML font color. */
+    color: rgb(238, 99, 99);
+}
+
+.main-logo-link {
+    /* If "color" wasn't set, it inherits
+    "a" element's "color". */
+    color: black;
+}
+
+.main-header,
+.main-menu,
+.footer {
+    background-color: rgb(200, 200, 200);
+}
+
+.language-link:last-child {
+    border-color: black;
+}
+
+.main-menu__link,
+.main-menu__link:hover {
+    color: white;
+}
+
+.main-menu__link--current-page {
+    /* This rule must be under ".main-menu__link" "color" rule
+    in order to apply new "color". */
+    color: darkblue;
+}
+
+.main-menu__list__item {
+    background-color: darkblue;
+}
+
+.content,
+.main-menu__link--current-page {
+    /* This rule must be under ".main-menu__link" "background-color" rule
+    in order to apply new "background-color". */
+    background-color: rgb(230, 230, 230);
+}
+
+.main-menu__link:hover {
+    background-color: blue;
+}
+
+.draft-content__title,
+.not-implemented-link {
+    color: grey;
+}
+
+.image-slider__button {
+    color: rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+    background-color: white;
+}
+
+.image-slider__buttons-wrapper {
+    background-color: lightgrey;
+}
+
+.front-end-websites-list__link {
+	background-color: lightgrey;
+}
+
+@media screen and (max-width: 1023px) {
+	.language-link:last-child {
+	    border-color: black;
+	}
+}

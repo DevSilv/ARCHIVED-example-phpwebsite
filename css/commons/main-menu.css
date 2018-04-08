@@ -1,0 +1,45 @@
+.main-menu {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.main-menu__list {
+    list-style-type: none;
+
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
+
+.main-menu__list__item {
+    text-align: center;
+
+    /* The only constraint for the "min-heigth" value is
+    that it be comfortable to touch with the finger.
+    The unit must be set as "rem", because we don't want
+    the height to expand too much if this element's font size
+    is, for example, 2 times the root element's font size. */
+    min-height: 3rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu__link {
+    text-decoration: unset;
+
+    height: 100%;
+    /* The unit must be set as "rem", because we don't want
+    the height to expand too much if this element's font size
+    is, for example, 2 times the root element's font size. */
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

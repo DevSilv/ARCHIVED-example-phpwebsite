@@ -1,0 +1,46 @@
+/* NOTE: Base (minimal tested) resolution was 280px x 280px
+(it is not a typo - it was NOT 2080px, just 280px indeed). */
+
+html {
+    /* "font-size" is present in order
+    to prevent browsers displaying the site
+    at (with?) different default font sizes. */
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    line-height: 1.3em;
+
+    /* "min-height" property of ".wrapper"
+    is used by grid layout. */
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: auto;
+}
+
+.main-header,
+.main-menu,
+.content,
+.footer {
+    /* When adjusting, take account
+    of the vertical scrollbar width. */
+    padding-left: 12px;
+    padding-right: 12px;
+    /* That is, 980px - (padding-left + padding-right). */
+    max-width: 956px;
+}
+
+.heading {
+    /* Reverse the "line-height" override
+    that is set in the "wrapper" selector. */
+    line-height: initial;
+}
