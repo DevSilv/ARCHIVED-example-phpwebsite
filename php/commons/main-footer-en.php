@@ -8,7 +8,7 @@
                     <a target="_blank" href="https://fonts.google.com/specimen/Alfa+Slab+One" class="link">Alfa Slab One</a>.</span>
                 |
                 <span class="footer__notice">
-                    The images on this website comes from:
+                    Images used on this website comes from:
                     <a target="_blank" href="https://pixabay.com/" class="link">https://pixabay.com/</a>
                 </span>
                 |
