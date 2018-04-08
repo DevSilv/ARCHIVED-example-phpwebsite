@@ -1,5 +1,14 @@
 {
-    "todo": [],
+    "todo": [
+        {
+            "part": "vscode",
+            "desc": "how to manage to-dos in vscode?"
+        },
+        {
+            "part": "config",
+            "desc": "how to store site config or content as json? window.open and local path?"
+        }
+    ],
     "done": {
         "implementation": [{
                 "id": "1",

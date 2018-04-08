@@ -1,5 +1,5 @@
 // Does not return.
-//  "imgElement" and "figcaptionElement" are being changed.
+//  "imgElement" and "figcaptionElement" parameters are being changed.
 function setImageAndCaption(
     imgElement,
     figcaptionElement,
@@ -11,11 +11,8 @@ function setImageAndCaption(
 
     // Index "0" (the first element of the "paths"
     //      array) was chosen arbitrarily.
-    var defaultImageSizePath =
-        imagesDirectory +
+    var defaultImageSizePath = imagesDirectory +
         groupedImagesProperties[currentImageIndex]["paths"][0];
-    // var imageName =
-    //     groupedImagesProperties[currentImageIndex]["name"];
 
     // Here is set the "src" attribute for these browsers
     //      which do not implement "srcset". Its value might
@@ -28,14 +25,15 @@ function setImageAndCaption(
         "srcset",
         (function() {
             var array = [];
-            groupedImagesProperties[currentImageIndex]["paths"].forEach(function(value, index) {
-                array.push(
-                    groupedImagesProperties[currentImageIndex]["paths"][index] +
-                    " " +
-                    groupedImagesProperties[currentImageIndex]["widths"][index] +
-                    "w"
-                ); // push
-            }); // forEach
+            groupedImagesProperties[currentImageIndex]["paths"]
+                .forEach(function(value, index) {
+                    array.push(
+                        groupedImagesProperties[currentImageIndex]["paths"][index] +
+                        " " +
+                        groupedImagesProperties[currentImageIndex]["widths"][index] +
+                        "w"
+                    ); // push
+                }); // forEach
             return array.join(", ");
         })() // function
     ); // setAttribute
@@ -61,15 +59,16 @@ window.addEventListener("load", function() {
 
     request.onload = function() {
         var currentImageIndex = 0;
-        console.log(this.responseText);
+        // The "this" below is used for clarity.
         var imagesFilenames = JSON.parse(this.responseText);
         var imagesDirectory = "../images/";
         var groupedImagesProperties = groupImagesProperties(
             imagesFilenames,
             imagesDirectory
         ); // groupImagesProperties
-        var dimLength = 3000; // Warning: these ones are NOT miliseconds!
 
+        // Warning: these below are NOT miliseconds!
+        var dimLength = 3000;
         var imgElement = document.getElementsByClassName(
             "image-slider__image"
         )[0]; // getElementsByClassName
@@ -102,9 +101,11 @@ window.addEventListener("load", function() {
                 dimOutElement(imgElement, dimLength);
 
                 setTimeout(function() {
-                    if (currentImageIndex === groupedImagesProperties.length - 1) {
-                        // If "currentImageIndex" is the index of the last
-                        //  element, set it to the index of the first one.
+                    if (currentImageIndex ===
+                        groupedImagesProperties.length - 1) {
+                        // If "currentImageIndex" is the index
+                        //      of the last element, set it
+                        //      to the index of the first one.
                         currentImageIndex = 0;
                     } else {
                         ++currentImageIndex;
@@ -132,9 +133,11 @@ window.addEventListener("load", function() {
 
                 setTimeout(function() {
                     if (currentImageIndex === 0) {
-                        // If "currentImageIndex" is the index of the first
-                        //  element, set it to the index of the last one.
-                        currentImageIndex = groupedImagesProperties.length - 1;
+                        // If "currentImageIndex" is the index
+                        //      of the first element, set it
+                        //      to the index of the last one.
+                        currentImageIndex
+                            = groupedImagesProperties.length - 1;
                     } else {
                         --currentImageIndex;
                     } // if
@@ -154,6 +157,6 @@ window.addEventListener("load", function() {
     }; // function
 
     // Download the list of images.
-    request.open("GET", "/php/helpers/get-filenames.php");
+    request.open("GET", "get-filenames.php");
     request.send();
 }); // addEventListener
