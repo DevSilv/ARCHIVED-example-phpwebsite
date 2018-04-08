@@ -10,7 +10,7 @@
 .main-logo-link:hover {
     /* It has to be set it explicitly black,
     i.e. as the default HTML font color. */
-    color: rgb(238, 99, 99);
+    color: black;
 }
 
 .main-logo-link {

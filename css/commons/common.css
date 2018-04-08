@@ -2,7 +2,7 @@
 (it is not a typo - it was NOT 2080px, just 280px indeed). */
 
 html {
-    /* "font-size" is present in order
+    /* "font-size" property is present in order
     to prevent browsers displaying the site
     at (with?) different default font sizes. */
     font-size: 16px;
@@ -41,6 +41,8 @@ body {
 
 .heading {
     /* Reverse the "line-height" override
-    that is set in the "wrapper" selector. */
+    that is set in the "wrapper" selector,
+    because "heading" elements would probably
+    have bigger font size than the normal text. */
     line-height: initial;
 }

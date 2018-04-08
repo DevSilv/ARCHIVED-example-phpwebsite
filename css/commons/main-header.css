@@ -1,7 +1,7 @@
 .main-header {
     display: flex;
     /* This selector has to have set "justify-content"
-    property, because setting more preferably "align-self"
+    property, because setting more preferable "align-self"
     on the "language-links-wrapper" element (its child)
     does not work for some reason. */
     justify-content: space-between;
@@ -26,7 +26,7 @@
 
 .language-links-wrapper {
     /* The display of this element has to be set as
-    flexbox, because it is the clearest way of getting
+    "flex", because it is the clearest way of getting
     rid of white space text nodes (have a look here:
     https://css-tricks.com/fighting-the-space-between-inline-block-elements/) */
     display: flex;
@@ -54,12 +54,12 @@
 }
 
 .one-language-link-wrapper:last-child .language-link {
-    /* The selectors have to look like
-    that, because ".language-link"s are
-    not siblings thus the ":first-child"
-    selector cannot be applied to them. */
-    /* The declaration's value has to be
-    set directly "underline", because
-    "initial" value doesn't work. */
+    /* The selector has to look like that,
+    because ".language-link"s ARE NOT siblings
+    thus the ":first-child" pseudo-selector
+    cannot be applied to them. */
+    /* The declaration's value has to be set
+    directly "underline", because "initial"
+    value does not work for some reason. */
     text-decoration: line-through underline;
 }

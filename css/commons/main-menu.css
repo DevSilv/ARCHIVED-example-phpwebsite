@@ -19,11 +19,12 @@
 .main-menu__list__item {
     text-align: center;
 
-    /* The only constraint for the "min-heigth" value is
-    that it be comfortable to touch with the finger.
+    /* The only constraint for the "min-heigth" value
+    is that it be comfortable to touch with the finger.
     The unit must be set as "rem", because we don't want
-    the height to expand too much if this element's font size
-    is, for example, 2 times the root element's font size. */
+    the height to expand too much if this element's font
+    size is, for example, 2 times the root element's font
+    size. */
     min-height: 3rem;
 
     display: flex;
@@ -34,9 +35,10 @@
     text-decoration: unset;
 
     height: 100%;
-    /* The unit must be set as "rem", because we don't want
-    the height to expand too much if this element's font size
-    is, for example, 2 times the root element's font size. */
+    /* The unit must be set as "rem", because
+    we don't want the height to expand too much
+    if this element's font size is, for example,
+    2 times the root element's font size. */
     padding: 0.5rem;
 
     display: flex;
