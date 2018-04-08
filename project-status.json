@@ -1,12 +1,11 @@
 {
-    "todo": [
-        {
-            "part": "vscode",
-            "desc": "how to manage to-dos in vscode?"
+    "todo": [{
+            "part": "config",
+            "desc": "store site config or content as json? window.open and local path?"
         },
         {
-            "part": "config",
-            "desc": "how to store site config or content as json? window.open and local path?"
+            "part": "all",
+            "desc": "branch/clone and rearrange to static version"
         }
     ],
     "done": {
