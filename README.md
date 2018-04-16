@@ -1,5 +1,5 @@
 # silvuss-website-1
-my second github project – just an example silvuss-website
+my second github project – just an example website
 
 ## copyright note
 note that this "silvuss-website-1" (this project) has **currently no license**, as explained here: https://choosealicense.com/no-permission/.
