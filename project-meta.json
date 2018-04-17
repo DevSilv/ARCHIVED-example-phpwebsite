@@ -1,0 +1,38 @@
+{
+    "html": {
+        "implementation": {},
+        "validation": {
+            "name": "validation",
+            "tool-meta": {
+                "name": "The W3C Markup Validation Service",
+                "url": "https://validator.w3.org/#validate_by_input",
+                "author": "W3C"
+            }
+        },
+        "testing": {}
+    },
+    "css": {
+        "implementation": {},
+        "validation": {
+            "name": "linting",
+            "tool-meta": {
+                "name": "CSS LINT",
+                "url": "http://csslint.net/",
+                "author": "Nicolas C. Zakas"
+            }
+        },
+        "testing": {}
+    },
+    "js": {
+        "implementation": {},
+        "validation": {
+            "name": "linting",
+            "tool-meta": {
+                "name": "JSLint",
+                "url": "http://jslint.com/",
+                "author": "Douglas Crockford"
+            }
+        },
+        "testing": {}
+    }
+}
