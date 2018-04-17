@@ -9,6 +9,12 @@ for your convenience i am including below a quote from that site:
 
 also note that i can **add a lincese** in the near future if it would be relevant to the needs of this project.
 
+## installation and usage
+simply put, you can see how the site looks and works by:
+1. copying its files to a server's main directory; the server should support php of version 7.1.16 (optimal) or greater;
+2. setting appropriate paths, especially the `index.php` file as the main file (it's located in site's main directory);
+3. navigating to `localhost`, `localhost/index.php` or some other similar address in your browser.
+
 ## technologies used
 there are **currently** following technologies used in this project:
 * html 5
