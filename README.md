@@ -16,7 +16,7 @@ simply put, you can see how the site looks and works by:
 3. navigating to `localhost`, `localhost/index.php` or some other similar address in your browser.
 
 ## technologies used
-there are **currently** following technologies used in this project:
+**currently** the following technologies are used in this project:
 * html 5
 * css 3
 * javascript – ecmascript version: 6
