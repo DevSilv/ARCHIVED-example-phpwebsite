@@ -59,7 +59,7 @@ window.addEventListener("load", function() {
 
     request.onload = function() {
         let currentImageIndex = 0;
-        // The "this" below is used for clarity.
+        // "this" below is used for clarity.
         let imagesFilenames = JSON.parse(this.responseText);
         let imagesDirectory = "../images/";
         let groupedImagesProperties = groupImagesProperties(
@@ -67,7 +67,7 @@ window.addEventListener("load", function() {
             imagesDirectory
         ); // groupImagesProperties
 
-        // Warning: these below are NOT miliseconds!
+        // Warning: these below are NOT miliseconds in fact!
         let dimLength = 3000;
         let imgElement = document.getElementsByClassName(
             "image-slider__image"

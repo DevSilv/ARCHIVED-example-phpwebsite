@@ -31,7 +31,6 @@ window.addEventListener("load", function() {
         let shortCurrentPath = currentPath.substring(
             currentPath.lastIndexOf("/")
         ); // substring
-        console.log(shortLocationPathname + ", " + shortCurrentPath);
         if (shortLocationPathname === shortCurrentPath) {
             mainMenuLinks[index].classList.add("main-menu__link--current-page");
             break;
