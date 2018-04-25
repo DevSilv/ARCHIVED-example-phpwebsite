@@ -10,20 +10,23 @@ function groupImagesProperties(imageFilesNames, imagesDirectory) {
     let groupedImagesProperties = [];
     if (Array.isArray(imageFilesNames) &&
         typeof imagesDirectory === "string") {
+        // console.log(imageFilesNames);
         for (let imgFlNm of imageFilesNames) {
+            // console.log(imgFlNm);
             // if (typeof imgFlNm !== "string") {
-            //     continue;
+            // console.log("this will not be included: " + imgFlNm);
+            // continue;
             // } // if
-            let imageName = imageFilesNames[imgFlNm].slice(
+            let imageName = imgFlNm.slice(
                 0,
-                imageFilesNames[imgFlNm].search(imageNameRegex)
+                imgFlNm.search(imageNameRegex)
             ); // slice
-            let imageWidth = imageFilesNames[imgFlNm].slice(
-                imageFilesNames[imgFlNm].search(imageWidthStartRegex),
-                imageFilesNames[imgFlNm].search(imageWidthEndRegex)
+            let imageWidth = imgFlNm.slice(
+                imgFlNm.search(imageWidthStartRegex),
+                imgFlNm.search(imageWidthEndRegex)
             ); // slice
             let imagePath = imagesDirectory +
-                imageFilesNames[imgFlNm];
+                imgFlNm;
             let exists = false;
             groupedImagesProperties.forEach(function(value, index) {
                 if (groupedImagesProperties[index].hasOwnProperty("name") &&

@@ -3,7 +3,7 @@
         return preg_match("/.jpg$/", $parameter);
     }
 
-    $images_directory = realpath(".")."/images/";
+    $images_directory = "../images/";
     $image_filenames = scandir($images_directory);
     $proper_image_filenames = array_filter(
         $image_filenames,
