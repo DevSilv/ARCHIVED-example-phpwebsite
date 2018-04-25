@@ -4,10 +4,10 @@
 //  Neither argument is being changed.
 function groupImagesProperties(imageFilesNames, imagesDirectory) {
     "use strict";
-    var imageNameRegex = /-\d+\.?[a-z]+$/;
-    var imageWidthStartRegex = /\d+\.?[a-z]+$/;
-    var imageWidthEndRegex = /\.?[a-z]+$/;
-    var groupedImagesProperties = [];
+    let imageNameRegex = /-\d+\.?[a-z]+$/;
+    let imageWidthStartRegex = /\d+\.?[a-z]+$/;
+    let imageWidthEndRegex = /\.?[a-z]+$/;
+    let groupedImagesProperties = [];
     if (Array.isArray(imageFilesNames) &&
         typeof imagesDirectory === "string") {
         for (let imgFlNm in imageFilesNames) {
@@ -51,10 +51,10 @@ function groupImagesProperties(imageFilesNames, imagesDirectory) {
 //  Neither argument is being changed.
 function createImageCaption(imgElement) {
     "use strict";
-    var caption = "";
+    let caption = "";
     if (imgElement instanceof HTMLElement) {
-        var imageWidth = imgElement.width;
-        var imageHeight = imgElement.height;
+        let imageWidth = imgElement.width;
+        let imageHeight = imgElement.height;
         caption = imageWidth + "px \u00D7 " + imageHeight + "px";
     } // if
     return caption;

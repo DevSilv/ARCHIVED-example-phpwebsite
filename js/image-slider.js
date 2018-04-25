@@ -11,7 +11,7 @@ function setImageAndCaption(
 
     // Index "0" (the first element of the "paths"
     //      array) was chosen arbitrarily.
-    var defaultImageSizePath = imagesDirectory +
+    let defaultImageSizePath = imagesDirectory +
         groupedImagesProperties[currentImageIndex]["paths"][0];
 
     // Here is set the "src" attribute for these browsers
@@ -24,7 +24,7 @@ function setImageAndCaption(
     imgElement.setAttribute(
         "srcset",
         (function() {
-            var array = [];
+            let array = [];
             groupedImagesProperties[currentImageIndex]["paths"]
                 .forEach(function(value, index) {
                     array.push(
@@ -43,7 +43,7 @@ function setImageAndCaption(
     ); // setAttribute
     imgElement.onload = function() {
         // Set caption.
-        var captionNode = document.createTextNode(
+        let captionNode = document.createTextNode(
             createImageCaption(imgElement)
         ); // createTextNode
         figcaptionElement.replaceChild(
@@ -55,24 +55,24 @@ function setImageAndCaption(
 
 window.addEventListener("load", function() {
     "use strict";
-    var request = new XMLHttpRequest();
+    let request = new XMLHttpRequest();
 
     request.onload = function() {
-        var currentImageIndex = 0;
+        let currentImageIndex = 0;
         // The "this" below is used for clarity.
-        var imagesFilenames = JSON.parse(this.responseText);
-        var imagesDirectory = "../images/";
-        var groupedImagesProperties = groupImagesProperties(
+        let imagesFilenames = JSON.parse(this.responseText);
+        let imagesDirectory = "../images/";
+        let groupedImagesProperties = groupImagesProperties(
             imagesFilenames,
             imagesDirectory
         ); // groupImagesProperties
 
         // Warning: these below are NOT miliseconds!
-        var dimLength = 3000;
-        var imgElement = document.getElementsByClassName(
+        let dimLength = 3000;
+        let imgElement = document.getElementsByClassName(
             "image-slider__image"
         )[0]; // getElementsByClassName
-        var figcaptionElement = document.getElementsByClassName(
+        let figcaptionElement = document.getElementsByClassName(
             "image-slider__caption"
         )[0]; // getElementsByClassName
 
@@ -86,10 +86,10 @@ window.addEventListener("load", function() {
         ); // setImageAndCaption
 
         // Set the "sliding images" action.
-        var imageSliderNextButton = document.getElementsByClassName(
+        let imageSliderNextButton = document.getElementsByClassName(
             "image-slider__next-button"
         )[0]; // getElementsByClassName
-        var imageSliderPrevButton = document.getElementsByClassName(
+        let imageSliderPrevButton = document.getElementsByClassName(
             "image-slider__prev-button"
         )[0]; // getElementsByClassName
         imageSliderNextButton.addEventListener(

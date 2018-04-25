@@ -1,7 +1,7 @@
 // Hightlight a menu position indicating the current page
 window.addEventListener("load", function() {
     "use strict";
-    var mainMenuLinks =
+    let mainMenuLinks =
         document.getElementsByClassName("main-menu__link");
 
     // Find the element with class
@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
     //	There is "for" loop, because "forEach"
     //      loop does not allow "break"s.
     for (let index = 0; index < mainMenuLinks.length; ++index) {
-        var elementClassList = mainMenuLinks[index].classList;
+        let elementClassList = mainMenuLinks[index].classList;
         if (elementClassList.contains("main-menu__link--current-page")) {
             elementClassList.remove("main-menu__link--current-page");
             break;
