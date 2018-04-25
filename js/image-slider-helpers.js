@@ -10,10 +10,10 @@ function groupImagesProperties(imageFilesNames, imagesDirectory) {
     let groupedImagesProperties = [];
     if (Array.isArray(imageFilesNames) &&
         typeof imagesDirectory === "string") {
-        for (let imgFlNm in imageFilesNames) {
-            if (typeof imgFlNm !== "string") {
-                continue;
-            } // if
+        for (let imgFlNm of imageFilesNames) {
+            // if (typeof imgFlNm !== "string") {
+            //     continue;
+            // } // if
             let imageName = imageFilesNames[imgFlNm].slice(
                 0,
                 imageFilesNames[imgFlNm].search(imageNameRegex)
