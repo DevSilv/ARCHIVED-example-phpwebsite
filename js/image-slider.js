@@ -26,6 +26,12 @@ function setImageAndCaption(
     imgElement.setAttribute(
         "srcset",
         (function() {
+            // I have tried to replace the code below
+            //  by "Array.map" to make it clearer, but
+            //  unfortunatly this construction is not
+            //  standard (I am iterating over two arrays
+            //  at once), therefore I consider "Array.map"
+            //  not to be clearer here.
             let array = [];
             currentImageProperties["paths"]
                 .forEach(function(value, index) {
