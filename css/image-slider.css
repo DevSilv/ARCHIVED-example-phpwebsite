@@ -18,6 +18,7 @@
 .image-slider__button {
     border-width: 3px;
     border-style: solid;
+    cursor: pointer;
 
     height: 3em;
 }
