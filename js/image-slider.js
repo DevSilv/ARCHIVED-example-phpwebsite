@@ -9,10 +9,12 @@ function setImageAndCaption(
 ) {
     "use strict";
 
+    let currentImageProperties =
+        groupedImagesProperties[currentImageIndex];
     // Index "0" (the first element of the "paths"
     //      array) was chosen arbitrarily.
     let defaultImageSizePath = imagesDirectory +
-        groupedImagesProperties[currentImageIndex]["paths"][0];
+        currentImageProperties["paths"][0];
 
     // Here is set the "src" attribute for these browsers
     //      which do not implement "srcset". Its value might
@@ -25,12 +27,12 @@ function setImageAndCaption(
         "srcset",
         (function() {
             let array = [];
-            groupedImagesProperties[currentImageIndex]["paths"]
+            currentImageProperties["paths"]
                 .forEach(function(value, index) {
                     array.push(
-                        groupedImagesProperties[currentImageIndex]["paths"][index] +
+                        currentImageProperties["paths"][index] +
                         " " +
-                        groupedImagesProperties[currentImageIndex]["widths"][index] +
+                        currentImageProperties["widths"][index] +
                         "w"
                     ); // push
                 }); // forEach
@@ -39,7 +41,7 @@ function setImageAndCaption(
     ); // setAttribute
     imgElement.setAttribute(
         "alt",
-        groupedImagesProperties[currentImageIndex]["name"]
+        currentImageProperties["name"]
     ); // setAttribute
     imgElement.onload = function() {
         // Set caption.
