@@ -1,3 +1,7 @@
+INFORMATION: This project ("silvuss-example-jsgame") has become discontinued as of August 27, 2019. Contributing to this project is not planned. It is now to be treated as archived.
+
+---
+
 # silvuss-example-phpwebsite
 
 This repository contains my second GitHub project – just a simple example website, written mostly in PHP and JavaScript.
