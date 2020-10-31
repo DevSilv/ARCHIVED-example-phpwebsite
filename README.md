@@ -1,8 +1,8 @@
-**INFORMATION: This project ("silvuss-example-phpwebsite") became discontinued as of August 27, 2019. Contributing to this project is not planned. This repository has been archived.**
+**INFORMATION: This project ("example-phpwebsite") became discontinued as of August 27, 2019. Contributing to this project is not planned. This repository has been archived.**
 
 ---
 
-# silvuss-example-phpwebsite
+# example-phpwebsite
 
 This repository contains my second GitHub project – just a simple example website, written mostly in PHP and JavaScript.
 
@@ -17,7 +17,7 @@ This repository contains my second GitHub project – just a simple example webs
 
 ## Copyright note
 
-Note that this "silvuss-example-phpwebsite" project (this repository) has currently **no license**, as explained in [this GitHub guide on licensing projects](https://choosealicense.com/no-permission/).
+Note that this "example-phpwebsite" project (this repository) has currently **no license**, as explained in [this GitHub guide on licensing projects](https://choosealicense.com/no-permission/).
 
 For your convenience, I am including below a quote from that site:
 
